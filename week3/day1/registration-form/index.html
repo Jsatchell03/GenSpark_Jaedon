@@ -6,16 +6,65 @@
     <title>Customer Registration Form</title>
   </head>
   <body>
-    <h1>Customer Registration Form</h1>
-    <form id="customer-registration">
-      <label for="fname">First name:</label><br />
-      <input type="text" id="fname" name="fname" /><br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" /><br />
-      <label for="email">Email address</label><br />
-      <input type="email" id="email" name="email" /> <br />
-      <br />
-      <input type="submit" value="Submit" />
-    </form>
+    <div
+      style="
+        width: 50%;
+        margin: auto;
+        margin-top: 10%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        padding-right: 30px;
+      "
+    >
+      <h3>Customer Registration Form</h3>
+      <form id="customer-registration">
+        <label for="fname">First name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          style="width: 100%"
+        /><br /><br />
+        <label for="lname">Last name:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          style="width: 100%"
+        /><br /><br />
+        <label for="username">Username:</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          style="width: 100%"
+        /><br /><br />
+        <label for="email">Email address:</label><br />
+        <input type="email" id="email" name="email" style="width: 100%" /><br />
+        <br />
+        <label for="gender">Gender:</label><br />
+        <select id="gender" name="gender" style="width: 100%">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option></select
+        ><br /><br />
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          style="width: 100%"
+        /><br /><br />
+        <label for="retype-password">Retype Password:</label><br />
+        <input
+          type="password"
+          id="retype-password"
+          name="retype-password"
+          style="width: 100%"
+        /><br /><br />
+        <br /><input type="submit" value="Submit" style="width: 100%" />
+      </form>
+    </div>
   </body>
 </html>
