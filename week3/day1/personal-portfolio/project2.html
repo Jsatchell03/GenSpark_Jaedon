@@ -5,5 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object Oriented Student Management System</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul
+          style="
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            gap: 10px;
+          "
+        >
+          <li><a href="./index.html">Home Page</a></li>
+          <li><a href="./about.html">About Me Page</a></li>
+          <li><a href="./contact.html">Contact Me Page</a></li>
+          <li>
+            <a href="./project1.html"
+              >Student Information Management System</a
+            >
+          </li>
+          <li>
+            <a href="./project2.html"
+              >Object Oriented Student Management System</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Student Management System</h1>
+      <p>
+        An object oriented console-based Java application for managing student
+        records, course information, and course enrollments.
+      </p>
+      <h2>Features</h2>
+      <h3>Student Management</h3>
+      <ul>
+        <li>View all student records</li>
+        <li>View individual student details</li>
+        <li>Add new students (with name and date of birth)</li>
+        <li>Update existing student information</li>
+        <li>Delete student records</li>
+      </ul>
+      <h3>Course Management</h3>
+      <ul>
+        <li>View all course records</li>
+        <li>View individual course details</li>
+        <li>Add new courses</li>
+        <li>Update course information</li>
+        <li>Delete course records</li>
+      </ul>
+      <h3>Enrollment Management</h3>
+      <ul>
+        <li>Enroll students in courses</li>
+        <li>Withdraw students from courses</li>
+        <li>View all courses a student is enrolled in</li>
+        <li>View all students enrolled in a course</li>
+      </ul>
+      <h2>Project Structure</h2>
+      <pre><code>oop-student-management-system/
+├── Main.java                    # Application entry point
+├── app/
+│   └── StudentManagementSystem.java  # Core application logic
+├── models/
+│   ├── BaseRecord.java          # Base class for records
+│   ├── Student.java             # Student model
+│   ├── Course.java              # Course model
+│   └── Date.java                # Date utility class
+├── database/
+│   ├── StudentDatabase.java     # Student data persistence
+│   └── CourseDatabase.java      # Course data persistence
+├── ui/
+│   └── ConsoleUI.java           # Console user interface
+└── data/
+    ├── students.txt             # Student data file
+    └── courses.txt              # Course data file</code></pre>
+      <h2>How to Run</h2>
+      <ol>
+        <li>
+          <p>Compile all Java files:</p>
+          <pre><code>javac Main.java</code></pre>
+        </li>
+        <li>
+          <p>Run the application:</p>
+          <pre><code>java Main</code></pre>
+        </li>
+      </ol>
+      <h2>Data Persistence</h2>
+      <p>
+        Student and course data are stored in text files located in the
+        <code>data/</code> directory. Changes made through the application are
+        automatically saved to these files.
+      </p>
+    </main>
+  </body>
 </html>

@@ -5,5 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Information Management System</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul
+          style="
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            gap: 10px;
+          "
+        >
+          <li><a href="./index.html">Home Page</a></li>
+          <li><a href="./about.html">About Me Page</a></li>
+          <li><a href="./contact.html">Contact Me Page</a></li>
+          <li>
+            <a href="./project1.html"
+              >Student Information Management System</a
+            >
+          </li>
+          <li>
+            <a href="./project2.html"
+              >Object Oriented Student Management System</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Student Information Management System (Mini Project)</h1>
+      <blockquote>
+        <p>
+          This is a small Java project that utilizes the
+          <code>StudentInformationManager</code> class to manage the data of up
+          to 100 students. The data is periodically updated in the
+          <code>students.txt</code> file. There is a console interface where
+          users can view, add, update, and delete student records.
+        </p>
+      </blockquote>
+      <h2>Console Interface</h2>
+      <pre><code>--- Student Information Management System Console ---
+1. Add Student Record
+2. View All Student Records
+3. Search For A Student Record
+4. Update A Student Record
+5. Delete A Student Record
+6. Exit
+Enter your selection to continue:</code></pre>
+      <h2>Persistent Data Storage</h2>
+      <p>
+        Simple coma seperated text file that the program reads line by line. On
+        each operation, the file is updated, and the file is read at the
+        beginning of the project.
+      </p>
+      <h2><code>StudentInformationManager</code> Class Design Choices</h2>
+      <ul>
+        <li>Method Overloading</li>
+        <li>Input validation is handled on the frontend</li>
+        <li>File updated after every operation.</li>
+      </ul>
+    </main>
+  </body>
 </html>
