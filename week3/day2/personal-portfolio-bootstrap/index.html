@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jaedon Satchell • Portfolio</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gray-100 text-gray-900">
+    <div class="flex min-h-screen">
+      <aside
+        id="sidebar"
+        class="hidden md:flex flex-col items-center w-64 bg-white shadow-lg p-6 top-0 left-0 h-screen fixed"
+      >
+        <img
+          src="assets/headshot.jpg"
+          alt="headshot"
+          class="rounded-full w-32 h-32 object-cover mb-6"
+        />
+
+        <div id="icons" class="flex space-x-4">
+          <a
+            href="https://www.linkedin.com/in/jaedon-satchell/"
+            target="_blank"
+            class="text-gray-700 hover:text-blue-600"
+          >
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+
+          <a
+            href="https://github.com/jsatchell03"
+            target="_blank"
+            class="text-gray-700 hover:text-gray-900"
+          >
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+
+          <a
+            href="mailto:Jsatchell2003@gmail.com"
+            class="text-gray-700 hover:text-red-600"
+          >
+            <i class="fas fa-envelope fa-lg"></i>
+          </a>
+        </div>
+        <div id="nav" class="mt-12">
+          <ul class="flex gap-4 flex-col">
+            <a
+              href="#about-me"
+              class="text-blue-500 hover:text-blue-600 text-xl"
+              ><li>About Me</li></a
+            >
+            <a
+              href="#projects"
+              class="text-blue-500 hover:text-blue-600 text-xl"
+              ><li>My Projects</li></a
+            >
+            <a
+              href="#experience"
+              class="text-blue-500 hover:text-blue-600 text-xl"
+              ><li>Experience</li></a
+            >
+          </ul>
+        </div>
+      </aside>
+
+      <main class="flex-1 p-6 max-w-6xl ml-64 mx-auto">
+        <section
+          id="about-me"
+          class="bg-white shadow-md rounded-lg p-6 flex flex-col md:flex-row gap-6"
+        >
+          <div class="flex flex-col gap-4">
+            <div>
+              <h1 class="text-4xl font-bold">Jaedon Satchell</h1>
+              <p class="text-gray-600">Full Stack Software Engineer</p>
+            </div>
+            <p class="leading-relaxed">
+              Hi, I'm an entry-level developer with hands-on experience building
+              full-stack applications using JavaScript, Python, React, Flask,
+              Node.js, cloud services, and AI coding assistants. I have a strong
+              foundation in computer science and a track record of shipping real
+              projects end-to-end.
+            </p>
+
+            <a
+              href="/assets/resume.pdf"
+              download="Jaedon Satchell's Resume"
+              class="inline-block"
+            >
+              <button
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+              >
+                Download My Resume
+              </button>
+            </a>
+          </div>
+
+          <img
+            src="./assets/vacation-pic.jpg"
+            alt="vacation"
+            class="w-full md:w-64 rounded-lg object-cover"
+          />
+        </section>
+
+        <section class="mt-10" id="projects">
+          <h2 class="text-3xl font-bold mb-6">Featured Projects</h2>
+
+          <div class="grid gap-6 md:grid-cols-3">
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <div class="flex justify-between items-center mb-2">
+                <h3 class="text-xl font-semibold">Fragentic</h3>
+                <a
+                  href="https://fragentic.vercel.app/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                >
+                  Live
+                </a>
+              </div>
+
+              <img
+                src="./assets/fragentic-pic.png"
+                class="rounded mb-3"
+                alt="Fragentic"
+              />
+
+              <p class="text-sm text-gray-700">
+                AI-powered fragrance search using natural language and vector
+                embeddings to match user intent with similar scents.
+              </p>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <div class="flex justify-between items-center mb-2">
+                <h3 class="text-xl font-semibold">OmniFan</h3>
+                <a
+                  href="https://github.com/Jsatchell03/OmniFan"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                >
+                  GitHub
+                </a>
+              </div>
+
+              <div class="flex space-x-2 mb-3 justify-between">
+                <img
+                  src="./assets/omnifan-pic.png"
+                  class="w-24 rounded"
+                  alt=""
+                />
+                <img
+                  src="./assets/omnifan-pic2.png"
+                  class="w-24 rounded"
+                  alt=""
+                />
+              </div>
+
+              <p class="text-sm text-gray-700">
+                React Native app for sports super fans to track teams, scores,
+                and upcoming games across leagues.
+              </p>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <div class="flex justify-between items-center mb-2">
+                <h3 class="text-xl font-semibold">Immigration Help</h3>
+                <a
+                  href="https://github.com/Jsatchell03/us-immigration-help"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                >
+                  GitHub
+                </a>
+              </div>
+
+              <img
+                src="./assets/immigration-help-pic.png"
+                class="rounded mb-3"
+                alt=""
+              />
+
+              <p class="text-sm text-gray-700">
+                Web app designed to help users navigate U.S. immigration
+                resources and processes more easily.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mt-10" id="experience">
+          <h2 class="text-3xl font-bold mb-6">Experience</h2>
+
+          <div class="space-y-6">
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <div
+                class="flex flex-col md:flex-row md:justify-between md:items-center"
+              >
+                <div>
+                  <h3 class="text-xl font-semibold">Gen Spark Trainee</h3>
+                  <p class="text-gray-600">Gen Spark • Teaneck, NJ</p>
+                </div>
+
+                <p class="text-gray-500 mt-2 md:mt-0">January 2026 - Present</p>
+              </div>
+
+              <ul
+                class="list-disc list-inside mt-4 space-y-2 text-gray-700"
+              ></ul>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <div
+                class="flex flex-col md:flex-row md:justify-between md:items-center"
+              >
+                <div>
+                  <h3 class="text-xl font-semibold">
+                    Volunteer Full Stack Software Engineer
+                  </h3>
+                  <p class="text-gray-600">Prometheus</p>
+                </div>
+
+                <p class="text-gray-500 mt-2 md:mt-0">October 2025 - Present</p>
+              </div>
+
+              <ul
+                class="list-disc list-inside mt-4 space-y-2 text-gray-700"
+              ></ul>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <div
+                class="flex flex-col md:flex-row md:justify-between md:items-center"
+              >
+                <div>
+                  <h3 class="text-xl font-semibold">
+                    Assistant Performance Analyst
+                  </h3>
+                  <p class="text-gray-600">Chicago Hounds</p>
+                </div>
+
+                <p class="text-gray-500 mt-2 md:mt-0">
+                  January 2025 - June 2025
+                </p>
+              </div>
+
+              <ul
+                class="list-disc list-inside mt-4 space-y-2 text-gray-700"
+              ></ul>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <div
+                class="flex flex-col md:flex-row md:justify-between md:items-center"
+              >
+                <div>
+                  <h3 class="text-xl font-semibold">Line Cook</h3>
+                  <p class="text-gray-600">Bartaco</p>
+                </div>
+
+                <p class="text-gray-500 mt-2 md:mt-0">
+                  April 2025 - August 2025
+                </p>
+              </div>
+
+              <ul
+                class="list-disc list-inside mt-4 space-y-2 text-gray-700"
+              ></ul>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <div
+                class="flex flex-col md:flex-row md:justify-between md:items-center"
+              >
+                <div>
+                  <h3 class="text-xl font-semibold">Site Director</h3>
+                  <p class="text-gray-600">KidzToPros</p>
+                </div>
+
+                <p class="text-gray-500 mt-2 md:mt-0">
+                  June 2023 - August 2023
+                </p>
+              </div>
+
+              <ul
+                class="list-disc list-inside mt-4 space-y-2 text-gray-700"
+              ></ul>
+            </div>
+          </div>
+        </section>
+        <footer class="text-center text-gray-500 mt-12">
+          <p>&copy; 2026 Jaedon Satchell</p>
+        </footer>
+      </main>
+    </div>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

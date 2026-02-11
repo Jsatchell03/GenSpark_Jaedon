@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <title>Calculator</title>
+    <link
+      href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full mx-16">
+      <div class="mb-4">
+        <div
+          class="bg-gray-200 h-16 flex items-center justify-end px-4 text-2xl rounded"
+          id="display"
+        ></div>
+      </div>
+      <div class="grid grid-cols-4 gap-2">
+        <button
+          onclick="clickNum('7')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          7
+        </button>
+        <button
+          onclick="clickNum('8')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          8
+        </button>
+        <button
+          onclick="clickNum('9')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          9
+        </button>
+        <button
+          onclick="clickOpp('+')"
+          class="bg-orange-400 hover:bg-orange-500 font-bold py-4 rounded text-lg"
+        >
+          +
+        </button>
+
+        <button
+          onclick="clickNum('4')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          4
+        </button>
+        <button
+          onclick="clickNum('5')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          5
+        </button>
+        <button
+          onclick="clickNum('6')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          6
+        </button>
+        <button
+          onclick="clickOpp('-')"
+          class="bg-orange-400 hover:bg-orange-500 font-bold py-4 rounded text-lg"
+        >
+          -
+        </button>
+
+        <button
+          onclick="clickNum('1')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          1
+        </button>
+        <button
+          onclick="clickNum('2')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          2
+        </button>
+        <button
+          onclick="clickNum('3')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          3
+        </button>
+        <button
+          onclick="clickOpp('*')"
+          class="bg-orange-400 hover:bg-orange-500 font-bold py-4 rounded text-lg"
+        >
+          *
+        </button>
+
+        <button
+          onclick="clickNum('0')"
+          class="bg-gray-300 hover:bg-gray-400 font-bold py-4 rounded text-lg"
+        >
+          0
+        </button>
+        <button
+          onclick="calculate()"
+          class="font-bold py-4 rounded text-lg col-span-2 bg-green-500 hover:bg-green-600 text-white"
+        >
+          =
+        </button>
+        <button
+          onclick="clickOpp('/')"
+          class="bg-orange-400 hover:bg-orange-500 font-bold py-4 rounded text-lg"
+        >
+          /
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
