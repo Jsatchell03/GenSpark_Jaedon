@@ -31,6 +31,9 @@ function calculate() {
     args.pop();
     args.pop();
   }
+  if (args.length <= 1) {
+    return;
+  }
   stack = [];
   display.innerHTML = "";
   for (let i = 0; i < args.length; i++) {
@@ -64,4 +67,9 @@ function calculate() {
   }
   display.innerHTML = res;
   resultDisplayed = true;
+}
+
+function clearDisplay() {
+  display.innerHTML = "";
+  resultDisplayed = false;
 }
