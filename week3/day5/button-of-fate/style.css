@@ -1,0 +1,15 @@
+.active{
+    background-color: aqua;
+}
+
+.bad{
+    background-color: red;
+}
+
+.good{
+    background-color: green;
+}
+
+.hidden{
+    display: none;
+}
