@@ -1,0 +1,22 @@
+main.dark {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+main.highlight{
+  border-style: solid;
+  border-color: yellow;
+  border-width: 8px;
+}
+
+ul.hidden{
+  display: none;
+}
+
+main{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
