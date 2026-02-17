@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Reactive Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>The Reactive Form</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        onchange="validateUsername()"
+      />
+      <p id="username-message">Username must be 3+ characters.</p>
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" onchange="validateEmail()" />
+      <p id="email-message">Email must be valid.</p>
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        onchange="validatePassword()"
+      />
+      <p id="password-message">
+        Password must be 8+ characters and include a number.
+      </p>
+      <button type="button" class="disabled" onclick="submitForm()" id="submit">
+        Submit
+      </button>
+      <p id="form-message">Fix the errors before submitting.</p>
+    </form>
+  </body>
+</html>
