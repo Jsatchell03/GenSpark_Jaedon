@@ -9,6 +9,16 @@ let spellbook = [
   { name: "poisonMist", element: "poison", power: 11, manaCost: 4 },
   { name: "arcaneBlast", element: "arcane", power: 20, manaCost: 8 },
   { name: "waterWhip", element: "water", power: 12, manaCost: 4 },
+  { name: "lavaBurst", element: "fire", power: 22, manaCost: 9 },
+  { name: "frostNova", element: "ice", power: 17, manaCost: 6 },
+  { name: "chainLightning", element: "lightning", power: 21, manaCost: 7 },
+  { name: "quakeStrike", element: "earth", power: 19, manaCost: 7 },
+  { name: "galeForce", element: "air", power: 14, manaCost: 5 },
+  { name: "voidRift", element: "dark", power: 24, manaCost: 10 },
+  { name: "radiantBeam", element: "light", power: 18, manaCost: 6 },
+  { name: "toxicSpikes", element: "poison", power: 15, manaCost: 5 },
+  { name: "mysticPulse", element: "arcane", power: 23, manaCost: 9 },
+  { name: "tidalCrash", element: "water", power: 20, manaCost: 7 },
 ];
 
 const addSpell = (name, element, power, manaCost) => {

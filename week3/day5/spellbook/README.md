@@ -1,4 +1,4 @@
-#Spellbook Manager
+l#Spellbook Manager
 
 This is a simple JavaScript spellbook system that stores and manages spells using objects and arrays.
 
